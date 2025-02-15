@@ -56,4 +56,5 @@ client.once('ready', () => {
   console.log('Bot is online!');
 });
 
-client.login('MTMzNTUzNDI4ODgyMDc2ODgxMA.GatPjj.CtjOJiLHvYBk153dSFFjmWz6TVotvv0pf-3kdc');
+require('dotenv').config();
+client.login(process.env.DISCORD_TOKEN);
